@@ -1,1 +1,1 @@
-# GCI_Homework_React
+# GCIHomework

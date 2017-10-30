@@ -1,0 +1,99 @@
+#main-container {
+  padding: 25px; }
+
+button {
+  padding: 7px 11px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-clip: padding-box;
+  border: 1px solid #8c8c8c;
+  color: #ffffff; }
+
+button.success {
+  background-color: #6bc54e; }
+
+button.success:disabled {
+  background-color: #68885e; }
+
+button.neutral {
+  background-color: #5697da; }
+
+button.danger {
+  background-color: #da3737; }
+
+form {
+  margin: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-clip: padding-box;
+  padding: 15px 0px;
+  -webkit-box-shadow: 0px 0px 10px #8c8c8c;
+  -moz-box-shadow: 0px 0px 10px #8c8c8c;
+  box-shadow: 0px 0px 10px #8c8c8c; }
+  form legend {
+    font-weight: bold;
+    font-size: 1.15em; }
+  form fieldset {
+    vertical-align: top;
+    border: none; }
+  form label {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold; }
+  form input {
+    padding: 15px;
+    z-index: 10; }
+  form input::placeholder {
+    color: #8c8c8c;
+    font-style: italic; }
+  form input:focus::placeholder {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity .65s;
+    transition: opacity .65s; }
+  form .form-item {
+    display: inline-block;
+    padding: 15px 15px 15px 0px; }
+  form button {
+    margin-left: 15px; }
+
+.user-item {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+  vertical-align: top;
+  -webkit-box-shadow: 0px 0px 10px #8c8c8c;
+  -moz-box-shadow: 0px 0px 10px #8c8c8c;
+  box-shadow: 0px 0px 10px #8c8c8c;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-clip: padding-box;
+  height: 185px;
+  width: 250px;
+  position: relative; }
+  .user-item section {
+    padding: 5px; }
+  .user-item .user-item-title {
+    font-size: 0.75em;
+    color: #8c8c8c;
+    font-style: italic; }
+  .user-item #actions {
+    position: absolute;
+    bottom: 5px; }
+  .user-item #name .user-item-entry {
+    display: inline-block;
+    margin-right: 5px; }
+  .user-item #address #city, .user-item #address #state {
+    display: inline-block;
+    margin-right: 5px; }
+  .user-item .user-item-address {
+    display: block; }
+  .user-item button {
+    margin: 0px 5px; }
+
+.error {
+  font-weight: bold;
+  font-style: italic;
+  color: #da3737;
+  font-size: .75em;
+  margin-left: 15px; }

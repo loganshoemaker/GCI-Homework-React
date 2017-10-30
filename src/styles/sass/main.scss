@@ -1,0 +1,141 @@
+@import 'reset';
+@import 'mixins';
+
+$gray: #8c8c8c;
+$danger: #da3737;
+$success: #6bc54e;
+$neutral: #5697da;
+
+#main-container {
+    padding: 25px;
+}
+
+button {
+    padding: 7px 11px;
+    @include border-radius(15px);
+    border: 1px solid $gray;
+    color: #ffffff;
+}
+
+button.success {
+    background-color: $success;
+}
+ 
+button.success:disabled {
+    background-color: #68885e;
+}
+
+button.neutral {
+    background-color: $neutral;
+}
+
+button.danger {
+    background-color: $danger;
+}
+
+form {
+    margin: 15px;
+    @include border-radius(15px);
+    padding: 15px 0px;
+    @include box-shadow(0px, 0px, 10px, $gray);
+    
+    legend {
+        font-weight: bold;
+        font-size: 1.15em;
+    }
+    
+    fieldset {
+        vertical-align: top;
+        border: none;
+    }
+    
+    label {
+        display: block;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    input {
+        padding: 15px;
+        z-index: 10;  
+    }       
+
+    input::placeholder{
+        color: $gray;
+        font-style: italic;
+    }
+    
+    input:focus::placeholder {
+        @include opacity(0);
+        -webkit-transition: opacity .65s;
+        transition: opacity .65s;  
+    }    
+    
+    .form-item {
+        display: inline-block;
+        padding: 15px 15px 15px 0px;
+    }
+    
+    button {
+        margin-left: 15px;
+    }
+    
+}
+
+.user-item {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    vertical-align: top;
+    @include box-shadow(0px, 0px, 10px, $gray);
+    @include border-radius(15px);
+    height: 185px;
+    width: 250px;
+    position: relative;
+    
+    section {
+        padding: 5px;
+    }
+    
+    .user-item-title {
+        font-size: 0.75em;
+        color: $gray;
+        font-style: italic;
+    }
+    
+    #actions {
+        position: absolute;
+        bottom: 5px;
+    }
+    
+    #name {
+        .user-item-entry {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+    
+    #address {
+        #city, #state {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+    
+    .user-item-address {
+        display: block;
+    }
+    
+    button {
+        margin: 0px 5px;
+    }
+
+}
+
+.error {
+    font-weight: bold;
+    font-style: italic;
+    color: $danger;
+    font-size: .75em;    
+    margin-left: 15px;    
+}
